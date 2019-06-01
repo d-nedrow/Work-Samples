@@ -1,0 +1,120 @@
+body {
+  width: 100%;
+}
+
+img {
+  max-width: 96%;
+}
+
+header h1, footer {
+  background-color: Aquamarine;
+  text-align: center;
+}
+
+header img {
+  float: left;
+  margin: .1em;
+}
+
+h1 {
+  font-size: 350%;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: .35em;
+  padding-bottom: .35em;
+}
+
+#nav_menu ul {
+  list-style-type: none;
+  width: 90%;
+}
+
+#nav_menu ul li {
+  float: left;
+  width: 50%;
+}
+
+#nav_menu ul li a {
+  text-align: center;
+  display: block;
+  width: 84%;
+  padding: 1em 0;
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  margin-left: 8%;
+  margin-right: 0;
+}
+
+main h2 {
+  text-align: center;
+  margin-top: 100px;
+  font-size: 250%;
+}
+
+main h2+p {
+  max-width: 700px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section {
+  float: left;
+  width: 38%;
+  margin-left: 10%;
+  margin-right: 2%;
+}
+
+section p {
+  margin-right: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+
+@media only screen and (max-width: 750px) {
+  #nav_menu ul li {
+    float: none;
+    width: 90%;
+    border: 2px solid white;
+  }
+  
+  #nav_menu ul li a {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  section {
+    float: none;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  section p {
+    margin-right: 0;
+  }
+  
+  header {
+    width: 85%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  header img {
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  
+  
+  
+  
+  
+}

@@ -1,0 +1,164 @@
+/* a  (a - l are old assign 4 style rules) */
+h1{
+  text-align:center;
+}
+
+/* b */
+h2 {
+  color: red;
+}
+
+/* c */
+h3 {
+  font-style: italic;
+}
+
+/* d */
+h2:not(:first-of-type){
+  margin-top: 40px;
+} 
+
+/* e */
+header, footer {
+  background-color:yellow;
+}
+
+/* f */
+main {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+/* g */
+header {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/* h */
+footer {
+  margin-top: 40px;
+}
+
+/* i */
+footer {
+  text-align: center;
+}
+
+/* l */
+body {
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+/* begin Assignment 5 style requirements */
+aside {
+  background-color: lightgray;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+main.columns {
+  -moz-columns: 3 200px;
+  -webkit-columns: 3 200px;
+  columns: 3 200px;
+}
+
+main h2 {
+  padding-top: 0;
+  margin-top: 0;
+}
+
+main {
+  margin-top: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  color: red;
+}
+
+/* Begin MIDTERM PROJECT style requirements */
+main a img {
+  float: left;
+  padding-right: 1.6%;
+}
+
+main a p{
+  margin-bottom: 150px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav ul li {
+  display: inline;
+  padding: 0 1.5em;
+}
+
+body {
+  width: 100%;
+}
+
+main.home {
+  width: 63.3%;
+  margin-right: 0;
+  margin-left: 0;
+  padding-right: 3.4%;
+  float: left;
+}
+
+aside.home {
+  width: 30.1%;
+  margin-right: 0;
+  margin-left: 0;
+  padding-left: 1.6%;
+  padding-right: 1.6%;
+  float: right;
+}
+
+footer {
+  clear: both;
+}
+
+a.current {
+  color: green;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 700px) {
+  main.home {
+    float: none;
+    margin: 10px auto;
+    width: 90%;
+  }
+  
+  main a p {
+    margin-bottom: 30px;
+  }
+  
+  aside.home {
+    float: none;
+    clear: both;
+    margin: 0 auto;
+    width: 90%;
+  }
+  
+  header nav ul li a{
+    display: block;
+  }
+  
+  aside img {
+    width: 100%;
+    max-width: 215px;
+  }
+}
+

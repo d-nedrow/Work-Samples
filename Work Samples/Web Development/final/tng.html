@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Star Trek: The Next Generation</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="information about Star Trek: The Next Generation">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/series.css">
+    <link href="jquery/jquery-ui.min.css" rel="stylesheet">
+    <script src="external/jquery/jquery.js"></script>
+    <script src="jquery/jquery-ui.min.js"></script>
+    <script src="http://malsup.github.com/jquery.cycle2.js"></script>
+  </head>
+  <body>
+    <header>
+      <a href="index.html"><img src="images/communicator.jpeg" alt="communicator"></a>
+      <h1>My Two Favorite Star Trek Series</h1>
+    </header>
+    <main>
+      <h2>Star Trek: The Next Generation</h2>
+      <!-- Accordion -->
+      <h2 class="demoHeaders">Accordion</h2>
+      <div id="accordion">
+        <h3>Series Information</h3>
+        <div>
+          <ul>
+            <li>On for 7 seasons from 1987 to 1994</li>
+            <li>The 2nd of 5 Star Trek series thus far</li>
+            <li>Set several decades after the events of The Original Series</li>
+            <li>Set in a common timeframe with Star Trek: Deep Space Nine and Star Trek: Voyager</li>
+            <li>The Klingons and the Federation are now at peace</li>
+            <li>Introduces the Borg as a villain</li>
+            <li>4 movies made from this series, in comparison with 6 from The Original Series</li>
+          </ul>
+        </div>
+        <h3>Some of the Best Episodes</h3>
+        <div>
+          <ul>
+            <li>The Measure of a Man</li>
+            <li>Q Who?</li>
+            <li>The Survivors</li>
+            <li>The Defector</li>
+            <li>Yesterday's Enterprise</li>
+            <li>Sins of the Father</li>
+            <li>Sarek</li>
+            <li>The Best of Both Worlds</li>
+            <li>Family</li>
+            <li>The Wounded</li>
+            <li>Clues</li>
+            <li>The Drumhead</li>
+            <li>The Mind's Eye</li>
+            <li>Darmok</li>
+            <li>Conundrum</li>
+            <li>Cause and Effect</li>
+            <li>The Inner Light</li>
+            <li>Chain of Command</li>
+            <li>Tapestry</li>
+            <li>Lower Decks</li>
+            <li>Pre-emptive Strike</li>
+            <li>All Good Things...</li>
+          </ul>
+        </div>
+        <h3>Character Notes</h3>
+        <div>
+          <h4>Captain Picard</h4>
+          <p>Picard is a philosophical and deeply moralistic Frenchman who is just as likely
+          to solve a problem with diplomacy or a well-timed speech as with action.</p>
+          <h4>Commander Riker</h4>
+          <p>The first officer is called "Number One" by Picard. Riker is more given to action, and 
+          is portrayed as a ladies man.</p>
+          <h4>Data</h4>
+          <p>The 2nd officer and operations officer, Data is an android.  While he often reminds 
+          everyone that he has no feelings, his actions often seem driven by instict and imagination.  
+          Data is a tremendous intellectual and a ridiculously valuable officer.</p>
+          <h4>Worf</h4>
+          <p>Worf is the Klingon chief of security.  In the beggining of the series, Worf is mainly 
+          known for offering up extremely rash advice and having it completely rejected by Picard.  
+          As the series continues, he becomes much more effective.</p>
+          <h4>Geordi La Forge</h4>
+          <p>Geordi is the chief engineer of the Enterprise.  He is blind, and during the tv series he 
+          wears a visor device so that he can "see".  In the movies, this is replaced by artificial eyes. 
+          Geordi is a technical genius who often works closely with his friend, Data.</p>
+          <h4>Counselor Troi</h4>
+          <p>Troi is half-human, half-Betazoid, which makes her "empathic" (she senses others emotions). 
+          She has the dual job of advising Picard on the bridge and also serving as the ship's psychologist.</p>
+          <h4>Doctor Crusher</h4>
+          <p>Long-time friend of Picard's, her husband had died while serving with Picard.  She has one son, 
+          Wesley, who serves on the ship for a good deal of the series.</p>
+        </div>
+      </div>
+      <script>
+        $( "#accordion" ).accordion({
+          collapsible: true,
+          heightStyle: "content"
+        });
+        // Hover states on the static widgets
+        $( "#dialog-link, #icons li" ).hover(
+          function() {
+            $( this ).addClass( "ui-state-hover" );
+          },
+          function() {
+            $( this ).removeClass( "ui-state-hover" );
+          }
+        );
+      </script>
+      <section>
+        <h2>Cycle 2 slide show of the Senior Officers</h2>
+        <p>Here are pictures of the senior officers aboard the Enterprise.</p>
+        <div class="cycle-slideshow"
+	        data-cycle-fx="scrollHorz"
+          data-cycle-timeout="2000"
+          data-cycle-caption="#adv-custom-caption"
+          data-cycle-caption-template="Slide {{slideNum}}: {{cycleTitle}}" >
+          <img src="images/picard.jpg" alt="picard" data-cycle-title="Captain Picard">
+          <img src="images/riker.jpg" alt="riker" data-cycle-title="Commander Riker">
+          <img src="images/data.jpg" alt="data" data-cycle-title="Data">
+          <img src="images/worf.jpg" alt="worf" data-cycle-title="Worf">
+          <img src="images/geordi.jpg" alt="geordi" data-cycle-title="Geordi La Forge">
+          <img src="images/troi.jpg" alt="troi" data-cycle-title="Counselor Troi">
+          <img src="images/crusher.jpg" alt="crusher" data-cycle-title="Doctor Crusher">
+          <!-- empty element for caption -->
+          <div id="adv-custom-caption" class="center"></div>
+        </div>      
+    </section>
+    </main>
+    <footer>
+      Daniel Nedrow - CS2800 - December 2016
+    </footer>
+  </body>
+</html>

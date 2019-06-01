@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Star Trek: Deep Space Nine</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="information about Star Trek: Deep Space Nine">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/series.css">
+    <link href="jquery/jquery-ui2.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="jquery/lightbox/lightbox.min.css">
+    <script src="external/jquery/jquery.js"></script>
+    <script src="jquery/jquery-ui2.min.js"></script>
+    <script src="jquery/lightbox/lightbox.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <a href="index.html"><img src="images/communicator.jpeg" alt="communicator"></a>
+      <h1>My Two Favorite Star Trek Series</h1>
+    </header>  
+    <main>  
+      <h2>Star Trek: Deep Space Nine</h2>
+      <!-- Tabs -->
+      <h2 class="demoHeaders">Tabs</h2>
+      <div id="tabs">
+        <ul>
+          <li><a href="#tabs-1">Series Information</a></li>
+          <li><a href="#tabs-2">Some of the Best Episodes</a></li>
+          <li><a href="#tabs-3">Character Notes</a></li>
+        </ul>
+        <div id="tabs-1">
+          <ul>
+            <li>On for 7 seasons from 1993 to 1999</li>
+            <li>The 3rd of the 5 Star Trek series thus far released</li>
+            <li>Has some overlap with the timeframe of Star Trek: The Next Generation</li>
+            <li>Set on a space station by a wormhole near the planet Bajor</li>
+            <li>Like Star Trek Voyager and Enterprise, no movies were made from this series</li>
+            <li>Primary villains are The Dominion and the Cardassians</li>
+            <li>DS9 was formerly a Cardassian space station, and the Cardassians were brutal 
+            occupiers of Bajor</li>
+          </ul>
+        </div>
+        <div id="tabs-2">
+          <ul>
+            <li>Emissary</li>
+            <li>Duet</li>
+            <li>In the Hands of the Prophets</li>
+            <li>The Circle</li>
+            <li>Necessary Evil</li>
+            <li>Whispers</li>
+            <li>Paradise</li>
+            <li>The Jem'Hadar</li>
+            <li>Past Tense</li>
+            <li>Improbably Cause/The Die is Cast</li>
+            <li>The Way of the Warrior</li>
+            <li>Hard Time</li>
+            <li>In Purgatory's Shadow/By Inferno's Light</li>
+            <li>Call to Arms</li>
+            <li>In the Pale Moonlight</li>
+            <li>Inter Arma Enim Silent Leges</li>
+            <li>Tacking Into the Wind</li>
+          </ul>
+        </div>
+        <div id="tabs-3">
+          <h3>Captain Sisko</h3>
+          <p>Starting the series at the rank of Commander, he is later promoted. His wife 
+          was killed in a battle with the Borg, and he initially blames Captain Picard. 
+          Now he raises his son, Jake, by himself on Deep Space Nine.</p>
+          <h3>Major Kira</h3>
+          <p>A member of the Bajoran militia, she was a freedom-fighter during the 
+          dark and violent Cardassian occupation.  Now she is the liason officer to 
+          Starfleet, and also serves as Sisko's first officer.</p>
+          <h3>Chief O'Brien</h3>
+          <p>Formerly the transporter chief on the Enterprise, he transfers to DS9 to 
+          become the chief engineer. He has a wife Keiko and daugher Molly aboard the 
+          station. O'Brien has sour memories of the Cardassians from a previous war.</p>
+          <h3>Doctor Bashir</h3>
+          <p>Initially he is comically eager and annoying, but he settles down to become 
+          an excellent officer. Bashir becomes best friends with Chief O'Brien.  Later 
+          in the series it is revealed that Bashir is genetically engineered, which he 
+          and his family have kept secret because it is illegal in the Federation.</p>
+          <h3>Jadzia Dax</h3>
+          <p>Dax is the Science Officer on DS9.  She is a Trill, which is a "joined species" 
+          which consists of a humanoid host body and a worm-like symbiant living inside the 
+          host.  The worm-like creature possesses hundreds of years worth of memories and 
+          intelligence as it is placed in a new host at the end of the old one's life.</p>
+          <h3>Odo</h3>
+          <p>Odo is a shapeshifter, and he serves as security chief.  Unlike on the Enterprise, 
+          this position does no include tactical or bridge duties, but is a law enforcement post. 
+          He also had this job under Cardassian rule, and is considered very objective by all. He 
+          is looking for other members of his species, but they will turn out to be the 
+          villainous Founders of the Dominion.</p>
+          <h3>Quark</h3>
+          <p>Quark is a Ferengi bartender, gambler, and criminal who runs a bar and casino 
+          on the station.  He is constantly being pursued by Odo, but the two have a 
+          grudging friendship.</p>
+          <h3>Jake Sisko</h3>
+          <p>The son of Captain Sisko, Jake learns early he doesn't want to follow in his 
+          father's footsteps and join Starfleet.  Instead, he aspires to become a writer.</p>
+        </div>
+      </div>
+      <script>
+      $( "#tabs" ).tabs();
+      // Hover states on the static widgets
+      $( "#dialog-link, #icons li" ).hover(
+        function() {
+          $( this ).addClass( "ui-state-hover" );
+        },
+        function() {
+          $( this ).removeClass( "ui-state-hover" );
+        }
+      );
+      </script>
+      <h2>Lightbox Plugin</h2>
+      <section>
+        <h3>Crew Pictures</h3>
+        <div>
+          <a href="images/sisko.jpg" data-lightbox="DS9Chars" data-title="Captain Sisko">
+            <img  src="images/sisko_thumb.jpg" alt="Sisko"/></a>
+          <a href="images/kira.jpg" data-lightbox="DS9Chars" data-title="Major Kira">
+            <img  src="images/kira_thumb.jpg" alt="Kira"/></a>
+          <a href="images/obrien.jpg" data-lightbox="DS9Chars" data-title="Chief O'Brien">
+            <img  src="images/obrien_thumb.jpg" alt="O'Brien"/></a>
+          <a href="images/bashir.jpg" data-lightbox="DS9Chars" data-title="Doctor Bashir">
+            <img  src="images/bashir_thumb.jpg" alt="Bashir"/></a>
+          <a href="images/dax.jpg" data-lightbox="DS9Chars" data-title="Jadzia Dax">
+            <img  src="images/dax_thumb.jpg" alt="Dax"/></a>
+          <a href="images/odo.jpg" data-lightbox="DS9Chars" data-title="Odo">
+            <img  src="images/odo_thumb.jpg" alt="Odo"/></a> 
+          <a href="images/quark.jpg" data-lightbox="DS9Chars" data-title="Quark">
+            <img  src="images/quark_thumb.jpg" alt="Quark"/></a>
+          <a href="images/jake.jpg" data-lightbox="DS9Chars" data-title="Jake">
+            <img  src="images/jake_thumb.jpg" alt="Jake"/></a>     
+        </div>
+      </section>
+      <img src="images/station.jpg" alt="station">
+    </main>
+    <footer>
+      Daniel Nedrow - CS2800 - December 2016
+    </footer>  
+  </body>
+</html>
